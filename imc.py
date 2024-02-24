@@ -3,8 +3,8 @@ h = float(input("Ingrese la altura en centimetros:\n"))
 if w<=0 or h<=0:
     print("Los valores ingresados no pueden ser 0")
 else:
-    #imc = w/((h/100)**2)
-    imc = w/pow(h/100,2)
+    #imc = round(w/((h/100)**2),2)
+    imc =round(w/pow(h/100,2),2)
     clasificacion=""
     if imc<18.5:
         clasificacion="Bajo Peso"
@@ -18,5 +18,5 @@ else:
         clasificacion="Obesidad Ggrado II"
     else:
         clasificacion="Obesidad Ggrado III"
-    print(f"Su IMC es {imc:.2f}")
+    print(f"Su IMC es {imc}")
     print(f"La clasificación OMS es {clasificacion}")
