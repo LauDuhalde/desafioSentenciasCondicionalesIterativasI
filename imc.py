@@ -8,13 +8,13 @@ else:
     clasificacion=""
     if imc<18.5:
         clasificacion="Bajo Peso"
-    elif imc>=18.5 and imc<=25:
+    elif imc>=18.5 and imc<25:
         clasificacion="Adecuado"
-    elif imc>25 and imc<=30:
+    elif imc>=25 and imc<30:
         clasificacion="Sobrepeso"
-    elif imc>30 and imc<=35:
+    elif imc>=30 and imc<35:
         clasificacion="Obesidad Ggrado I"
-    elif imc>35 and imc<=40:
+    elif imc>=35 and imc<40:
         clasificacion="Obesidad Ggrado II"
     else:
         clasificacion="Obesidad Ggrado III"
